@@ -55,8 +55,7 @@ blocks:
           rebase_icon: ' '
           revert_icon: ' '
           tag_icon: ' '
-        powerline_symbol: 
-        template: '{{ if gt .Behind 0 }}↓{{ end }}{{ if gt .Ahead 0 }}\u2191{{ end }}'
+        template: ' {{ .BranchStatus }} {{ .Ahead }} {{ .Behind }}{{ if gt .Ahead 0 }}This works{{ end }}'
         type: git
     type: prompt
 final_space: true

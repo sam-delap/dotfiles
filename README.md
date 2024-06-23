@@ -11,10 +11,12 @@ First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me
 - zsh
 - fzf
 - git
+- oh-my-posh
 
-## neovim 
+## neovim
 - NeoVim (use tagged releases)
 - fzf
+- ripgrep
 
 ## stow-based dotfiles management
 - stow

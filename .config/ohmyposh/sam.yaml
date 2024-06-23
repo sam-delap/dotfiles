@@ -49,7 +49,7 @@ blocks:
         foreground: 'p:blue'
         style: plain
         properties:
-          fetch_upstream_icon: false
+          fetch_upstream_icon: true
           merge_icon: ' '
           no_commits_icon: ' '
           rebase_icon: ' '

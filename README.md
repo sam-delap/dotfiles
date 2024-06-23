@@ -12,6 +12,7 @@ First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me
 - fzf
 - git
 - oh-my-posh
+- zoxide
 
 ## neovim
 - NeoVim (use tagged releases)

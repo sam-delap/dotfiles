@@ -49,13 +49,13 @@ blocks:
         foreground: 'p:blue'
         style: plain
         properties:
-          fetch_upstream_icon: true
+          fetch_upstream_icon: false
           merge_icon: ' '
           no_commits_icon: ' '
           rebase_icon: ' '
           revert_icon: ' '
           tag_icon: ' '
-        template: ' {{ .Ahead }} {{ .Behind }}{{ if gt .Ahead 0 }}This works{{ end }}'
+        template: '{{ if gt .Behind 0 }}↓{{ end }}{{ if gt .Ahead 0 }}\u2191{{ end }}'
         type: git
     type: prompt
 final_space: true

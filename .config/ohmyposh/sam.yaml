@@ -50,6 +50,7 @@ blocks:
         style: plain
         properties:
           fetch_upstream_icon: false
+          fetch_status: true
           merge_icon: ' '
           no_commits_icon: ' '
           rebase_icon: ' '

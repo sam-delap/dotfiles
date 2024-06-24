@@ -41,5 +41,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # Aliases
 alias ls='ls --color'
 
+# Env vars
+export YSU_MESSAGE_POSITION="after"
 # Shell integration
 # source <(fzf --zsh)

@@ -43,5 +43,10 @@ alias ls='ls --color'
 
 # Env vars
 export YSU_MESSAGE_POSITION="after"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
 # Shell integration
+eval "$(zoxide init zsh)"
 # source <(fzf --zsh)

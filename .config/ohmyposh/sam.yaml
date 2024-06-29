@@ -51,12 +51,13 @@ blocks:
         style: plain
         properties:
           fetch_upstream_icon: false
+          fetch_status: true
           merge_icon: ' '
           no_commits_icon: ' '
           rebase_icon: ' '
           revert_icon: ' '
           tag_icon: ' '
-        template: '{{ if gt .Behind 0 }}↓{{ end }}{{ if gt .Ahead 0 }}\u2191{{ end }}'
+        template: '{{ if gt .Behind 0 }}↓{{ end }}{{ if gt .Ahead 0 }}↑{{ end }}'
         type: git
     type: prompt
 final_space: true

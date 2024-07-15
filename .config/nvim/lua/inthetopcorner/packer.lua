@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
 	--   -- Packer can manage itself
 	use 'wbthomason/packer.nvim'
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.1',
+		'nvim-telescope/telescope.nvim', tag = '0.1.4',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use({ 
@@ -41,8 +41,9 @@ return require('packer').startup(function(use)
 		-- Autocompletion
 		{'hrsh7th/nvim-cmp'},     -- Required
 		{'hrsh7th/cmp-nvim-lsp'}, -- Required
-		{'L3MON4D3/LuaSnip'},     -- Required
-	}
+		{'L3MON4D3/LuaSnip'}     -- Required
+	};
+    use 'APZelos/blamer.nvim'
 }
 end)
 

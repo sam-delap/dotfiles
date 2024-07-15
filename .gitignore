@@ -1,0 +1,5 @@
+# Compiled Packer
+.config/nvim/plugin/packer_compiled.lua
+
+# Tmux plugins
+.config/tmux/plugins/**

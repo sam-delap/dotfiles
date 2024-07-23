@@ -7,6 +7,9 @@ That's what this file is here to do
 # Prerequisites
 First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me on this awesome journey
 
+## stow-based dotfiles management
+- stow
+
 ## zsh
 - zsh
 - fzf
@@ -19,5 +22,3 @@ First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me
 - fzf
 - ripgrep
 
-## stow-based dotfiles management
-- stow

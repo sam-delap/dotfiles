@@ -17,7 +17,7 @@ autoload -U compinit && compinit
 zinit cdreplay -q
 
 # Oh My Posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/sam.yaml)"
+eval "$($HOME/.local/bin/oh-my-posh init zsh --config $HOME/.config/ohmyposh/sam.yaml)"
 
 # Keybinds
 bindkey '^b' history-search-backward
@@ -52,4 +52,4 @@ export PATH=$GOPATH/bin:$GOROOT/bin:~/.local/bin:$PATH
 
 # Shell integration
 eval "$(zoxide init zsh)"
-# source <(fzf --zsh)
+source <(fzf --zsh)

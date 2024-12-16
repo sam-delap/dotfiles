@@ -1,11 +1,14 @@
-# BRAIN MEMORY FOR INSTALLING THINGS
+# Dotfiles
 
-While this dotfiles repository is a handy way for me to keep track of what I've done with my files to-date,
-it doesn't tell me anything about what I need to install to make sure they're set up correctly.
-That's what this file is here to do
+This repository is where I maintain all of the installation links/guides
+I use to configure developer machines. This allows me to both get up
+and running on a new machine quickly, and provide an easily shareable
+format to socialize my config (or just start a conversation) with developers
+on my team.
 
-# Prerequisites
-First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me on this awesome journey
+# Installation
+
+These sections describe the commands (or installation links) I need to install the prerequisite tooling on my machine to get up and running quickly.
 
 ## stow-based dotfiles management
 - stow
@@ -25,7 +28,7 @@ First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me
 ## zsh
 - zsh - install from [here](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#how-to-install-zsh-on-many-platforms)
 - fzf - install from [here](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
-- git - should be installed by default, if not is sadge GLHF
+- git - should come default on most distros, if not download from [here](https://git-scm.com/downloads/linux)
 - A NerdFont - I use JetBrainsMono, there's a full list for download [here](https://www.nerdfonts.com/font-downloads)
 - oh-my-posh - install from [here](https://ohmyposh.dev/docs/installation/linux)
 - zoxide - install from [here](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation)
@@ -41,5 +44,5 @@ First off, thanks to https://www.youtube.com/watch?v=y6XCebnB9gs for starting me
 - tmux - install from [here](https://github.com/tmux/tmux/wiki/Installing)
 - tmux package manager (tpm)
     ```bash
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm)
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     ```

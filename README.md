@@ -30,6 +30,7 @@ These sections describe the commands (or installation links) I need to install t
 - fzf - install from [here](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
 - git - should come default on most distros, if not download from [here](https://git-scm.com/downloads/linux)
 - A NerdFont - I use JetBrainsMono, there's a full list for download [here](https://www.nerdfonts.com/font-downloads)
+    - A helpful link for downloading said font is [here](https://blog.khmersite.net/p/installing-nerd-font-on-fedora/)
 - oh-my-posh - install from [here](https://ohmyposh.dev/docs/installation/linux)
 - zoxide - install from [here](https://github.com/ajeetdsouza/zoxide?tab=readme-ov-file#installation)
 

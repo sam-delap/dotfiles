@@ -39,7 +39,18 @@ These sections describe the commands (or installation links) I need to install t
 - ripgrep - install from [here](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
 - fzf - install from [here](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
 
+### Note on LSP management after migrating to Lazy
 
+Unfortunately, something in my config seems to be preventing mason-lspconfig's auto-enable
+functionality from working. So for now, I'm going to have to resort to mason-less LSP management.
+
+I'll document the general procedure to install and enable an LSP using nvim-lspconfig here:
+
+1. Install the LSP server - most of these are freely available. Mason can still be used as
+a really nice package manager for these if you'd prefer
+2. Enable the LSP server using `vim.lsp.enable()`
+3. Go back and add any configuration you need to, which can usually be found on the LSP
+server's page
 
 ## tmux
 - tmux - install from [here](https://github.com/tmux/tmux/wiki/Installing)

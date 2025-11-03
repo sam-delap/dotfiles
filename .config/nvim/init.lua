@@ -1,1 +1,1 @@
-require("inthetopcorner")
+require("config.lazy")

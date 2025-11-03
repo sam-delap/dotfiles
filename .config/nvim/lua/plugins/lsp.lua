@@ -3,16 +3,12 @@
 -- 2. Install using Mason
 -- 3. Enable config inline
 
-vim.lsp.enable('ansiblels')
-vim.lsp.enable('docker_language_server')
-vim.lsp.enable('lua_ls')
-vim.lsp.enable('ruff')
-vim.lsp.enable('rust_analyzer')
-vim.lsp.enable('tofu_ls')
-
 return {
-    {
+    "mason-org/mason-lspconfig.nvim",
+    opts = {},
+    dependencies = {
+        { "mason-org/mason.nvim", opts = {} },
         "neovim/nvim-lspconfig",
-        lazy = false
-    }
+    },
+    lazy = false
 }

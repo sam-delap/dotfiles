@@ -5,7 +5,7 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim"
     },
-    tag = "0.1.4", -- use tagged releases to avoid breaking changes
+    tag = "0.1.8", -- use tagged releases to avoid breaking changes
     keys = {
         { '<leader>pf', builtin.find_files },
         { '<leader>ps', function()

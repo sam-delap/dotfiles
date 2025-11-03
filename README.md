@@ -39,8 +39,6 @@ These sections describe the commands (or installation links) I need to install t
 - ripgrep - install from [here](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
 - fzf - install from [here](https://github.com/junegunn/fzf?tab=readme-ov-file#installation)
 
-
-
 ## tmux
 - tmux - install from [here](https://github.com/tmux/tmux/wiki/Installing)
 - tmux package manager (tpm)

@@ -5,11 +5,11 @@ return {
     dependencies = {
         "nvim-lua/plenary.nvim"
     },
-    version = "0.1.8",
+    tag = "0.1.4", -- use tagged releases to avoid breaking changes
     keys = {
         { '<leader>pf', builtin.find_files },
         { '<leader>ps', function()
-            builtin.grep_string({ search = vim.fn.input("Find Word: ") })
+            builtin.grep_string({ search = vim.fn.input("Find Word > ") })
         end }
     }
 }

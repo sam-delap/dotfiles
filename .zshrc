@@ -53,3 +53,6 @@ export PATH=$GOPATH/bin:$GOROOT/bin:~/.local/bin:$PATH
 # Shell integration
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
+
+# opencode
+export PATH=/home/delaps/.opencode/bin:$PATH

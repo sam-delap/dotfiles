@@ -3,21 +3,21 @@ import * as path from "path";
 
 export const MyPlugin: Plugin = async ({ project, client, $, directory, worktree }) => {
   // Log initialization to verify plugin is loaded
-  console.error("Discord notification plugin initialized for directory: " + directory);
+  console.error("Webhook notification plugin initialized for directory: " + directory);
   
-  // Discord webhook configuration
-  // You can manually update this URL to your Discord webhook
-  const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1437815397847007387/seeSpV366bFSdR-un8EBhsQAAtEi02iatgjkRin9JxGYSp9b4czzKXIOsa1yEUJAbJZM";
+  // Webhook configuration
+  // You can manually update this URL to your Webhook
+  const WEBHOOK_URL = "YOUR_WEBHOOK_URL_HERE"
 
-  // Function to send webhook notification to Discord
-  const sendDiscordNotification = async (message: string): Promise<void> => {
-    if (!DISCORD_WEBHOOK_URL) {
-      console.error("Discord webhook URL not configured");
+  // Function to send webhook notification to Webhook
+  const sendWebhookNotification = async (message: string): Promise<void> => {
+    if (!WEBHOOK_URL || WEBHOOK_URL === "YOUR_WEBHOOK_URL_HERE") {
+      console.error("Webhook URL not configured");
       return;
     }
 
     try {
-      const response = await fetch(DISCORD_WEBHOOK_URL, {
+      const response = await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,23 +28,23 @@ export const MyPlugin: Plugin = async ({ project, client, $, directory, worktree
       });
 
       if (!response.ok) {
-        console.error(`Failed to send Discord notification: ${response.status} ${response.statusText}`);
+        console.error(`Failed to send Webhook notification: ${response.status} ${response.statusText}`);
       }
     } catch (error) {
-      console.error("Error sending Discord notification:", error);
+      console.error("Error sending Webhook notification:", error);
     }
   };
 
   return {
     event: async ({ event }) => {
       if (event.type === "session.idle") {
-        // Format a message for Discord
+        // Format a message for Webhook
         const projectName = project?.name || path.basename(directory);
         const timestamp = new Date().toLocaleString();
         const message = `🤖 OpenCode session completed for project: **${projectName}** at ${timestamp}`;
         
-        // Send notification to Discord
-        await sendDiscordNotification(message);
+        // Send notification to Webhook
+        await sendWebhookNotification(message);
       }
     },
   }

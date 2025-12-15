@@ -6,3 +6,6 @@
 
 # UV receipt.json
 .config/uv/uv-receipt.json
+
+# Opencode plugins
+.config/opencode/plugin/**

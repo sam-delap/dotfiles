@@ -3,3 +3,6 @@
 
 # Tmux plugins
 .config/tmux/plugins/**
+
+# UV receipt.json
+.config/uv/uv-receipt.json

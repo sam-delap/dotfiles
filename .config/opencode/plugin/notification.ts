@@ -7,7 +7,7 @@ export const MyPlugin: Plugin = async ({ project, client, $, directory, worktree
   
   // Webhook configuration
   // You can manually update this URL to your Webhook
-  const WEBHOOK_URL = "YOUR_WEBHOOK_URL_HERE"
+  const WEBHOOK_URL = process.env.OPENCODE_WEBHOOK_URL == null ? "YOUR_WEBHOOK_URL_HERE" : process.env.OPENCODE_WEBHOOK_URL // "https://discord.com/api/webhooks/1438325455005548595/MtKcWxGX9Ad8TkZOmfy383veBFfNJCmAxyffcyXc9xkOdyAcMvJWBnWpc7lPweeFy9Cf"
 
   // Function to send webhook notification to Webhook
   const sendWebhookNotification = async (message: string): Promise<void> => {

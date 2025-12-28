@@ -1,4 +1,44 @@
 # Initial zsh configuration provided by Dreams of Autonomy: https://www.youtube.com/watch?v=ud7YxC33Z3w
+
+# Bazzite-specific config, pulled from /etc/bashrc
+# User specific environment
+# Only display echos from profile.d scripts if we are no login shell
+# and interactive - otherwise just process them to set envvars
+for i in /etc/profile.d/*.sh; do
+if [ -r "$i" ]; then
+    if [ "$PS1" ]; then
+	. "$i"
+    else
+	. "$i" >/dev/null
+    fi
+fi
+done
+
+unset i
+
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Only display echos from profile.d scripts if we are no login shell
+# and interactive - otherwise just process them to set envvars
+for i in /etc/profile.d/*.sh; do
+if [ -r "$i" ]; then
+    if [ "$PS1" ]; then
+	. "$i"
+    else
+	. "$i" >/dev/null
+    fi
+fi
+done
+
+unset i
+
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
 # Plugin manager - zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit"
 [ ! -d $ZINIT_HOME ] && mkdir -p "$(dirname $ZINIT_HOME)"

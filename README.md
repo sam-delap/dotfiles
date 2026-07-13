@@ -45,3 +45,6 @@ These sections describe the commands (or installation links) I need to install t
     ```bash
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     ```
+
+## herdr
+- herdr - install from [here](https://herdr.dev/docs/install/)

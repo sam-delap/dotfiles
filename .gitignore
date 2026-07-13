@@ -9,3 +9,9 @@
 
 # Opencode plugins
 .config/opencode/plugin/**
+
+# Herdr runtime files
+.config/herdr/*.log
+.config/herdr/*.sock
+.config/herdr/session.json
+.config/herdr/session-history.json

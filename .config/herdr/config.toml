@@ -1,0 +1,14 @@
+[ui]
+agent_panel_sort = "spaces"
+
+[terminal]
+default_shell = "/home/linuxbrew/.linuxbrew/bin/zsh"
+shell_mode = "login"
+new_cwd = "follow"
+
+[keys]
+prefix = "ctrl+space"
+previous_tab = ["prefix+p", "alt+shift+h"]
+next_tab = ["prefix+n", "alt+shift+l"]
+split_horizontal = 'prefix+"'
+split_vertical = "prefix+%"

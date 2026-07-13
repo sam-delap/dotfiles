@@ -82,3 +82,7 @@ export PATH=/home/delaps/.opencode/bin:$PATH
 # cuda
 export PATH=/usr/local/cuda-13.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-13.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# formae
+export PATH=/opt/pel/formae/bin:$PATH
+export PATH="$HOME/.npm-global/bin:$PATH"

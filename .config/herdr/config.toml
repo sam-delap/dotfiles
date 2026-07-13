@@ -12,3 +12,7 @@ previous_tab = ["prefix+p", "alt+shift+h"]
 next_tab = ["prefix+n", "alt+shift+l"]
 split_horizontal = 'prefix+"'
 split_vertical = "prefix+%"
+focus_pane_left = ["prefix+h", "prefix+left"]
+focus_pane_down = ["prefix+j", "prefix+down"]
+focus_pane_up = ["prefix+k", "prefix+up"]
+focus_pane_right = ["prefix+l", "prefix+right"]

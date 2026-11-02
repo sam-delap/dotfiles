@@ -77,7 +77,7 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 
 # opencode
-export PATH=/home/delaps/.opencode/bin:$PATH
+export PATH=$HOME/.opencode/bin:$PATH
 
 # cuda
 export PATH=/usr/local/cuda-13.0/bin${PATH:+:${PATH}}
